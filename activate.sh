@@ -13,5 +13,5 @@ fi
 
 export PREFIX=/usr/local/app/
 
-cd packages/$PKGNAME
+cd $PKGNAME
 exec ./activate.sh

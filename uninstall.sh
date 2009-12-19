@@ -7,6 +7,6 @@ fi
 
 PKGNAME=$1
 echo "uninstalling $PKGNAME"
-cd packages/$PKGNAME/
+cd $PKGNAME/
 ./uninstall.sh
 

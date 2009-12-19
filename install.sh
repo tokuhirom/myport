@@ -14,7 +14,6 @@ if [ ! -d $PKGNAME ];then
 fi
 
 echo "installing $PKGNAME"
-cd packages
 if [ ! -d $PKGNAME/build ]; then
     mkdir $PKGNAME/build
 fi
