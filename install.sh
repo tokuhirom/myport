@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 if [ $# == 0 ];then
     echo "Usage: install.sh pkgname";
@@ -7,6 +7,18 @@ fi
 
 PKGNAME=$1
 export PREFIX=/usr/local/app/
+
+function install_autotools () {
+    if [ ! -f $TARFILE ]; then
+        wget $SRCURL
+    fi
+
+    tar xzvf $TARFILE
+    cd $TARDIR
+    ./configure --prefix=/usr/local/app/$APP-$VERSION
+    make
+    make install
+}
 
 if [ ! -d $PREFIX ]; then
     mkdir $PREFIX
@@ -17,10 +29,17 @@ if [ ! -d $PKGNAME ];then
     exit
 fi
 
+if [ -f $PKGNAME/SPEC ]; then
+    echo "loading spec"
+    . $PKGNAME/SPEC
+fi
 echo "installing $PKGNAME"
 if [ ! -d $PKGNAME/build ]; then
-    mkdir $PKGNAME/build
+    mkdir -p $PKGNAME/build
 fi
 cd $PKGNAME/build/
-exec ../install.sh
-
+if [ -f ../install.sh ]; then
+    . ../install.sh
+else
+    install_autotools
+fi

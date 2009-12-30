@@ -1,0 +1,6 @@
+export VERSION=0.5.0
+export TARFILE=skyload-$VERSION.tar.gz
+export SRCURL=http://skyload.googlecode.com/files/$TARFILE
+export TARDIR=skyload-$VERSION
+export APP=skyload
+

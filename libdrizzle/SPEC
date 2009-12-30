@@ -1,0 +1,6 @@
+export VERSION=0.6
+export APP=libdrizzle
+export TARFILE=$APP-$VERSION.tar.gz
+export SRCURL=http://launchpad.net/libdrizzle/trunk/$VERSION/+download/$APP-$VERSION.tar.gz
+export TARDIR=$APP-$VERSION
+
