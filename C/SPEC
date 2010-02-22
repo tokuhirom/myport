@@ -1,0 +1,5 @@
+export VERSION=0.06
+export APP=C
+export TARFILE=$APP-$VERSION.tar.gz
+export SRCURL=http://labs.cybozu.co.jp/blog/kazuho/archives/c/$TARFILE
+export TARDIR=$APP-$VERSION
