@@ -1,18 +1,18 @@
 #!/bin/zsh
 
-. ../VERSION
+. ../SPEC
 
 if [ -f /etc/debian_version ]; then
     sudo aptitude install libbz2-dev
 fi
 
-if [ ! -f tokyocabinet-$VERSION.tar.gz ]; then
-    wget http://1978th.net/tokyocabinet/tokyocabinet-$VERSION.tar.gz
+if [ ! -f $TARFILE ]; then
+    wget $SRCURL
 fi
 
-tar xzvf tokyocabinet-$VERSION.tar.gz
-cd tokyocabinet-$VERSION
-./configure --prefix=/usr/local/app/tokyocabinet-$VERSION
+tar xzvf $TARFILE
+cd $TARDIR
+./configure --prefix=/usr/local/app/$APP-$VERSION
 make
 make install
 

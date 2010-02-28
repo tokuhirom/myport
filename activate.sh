@@ -7,6 +7,7 @@ fi
 
 function link_files () {
     TARGET=$1
+    echo "linking $TARGET"
     if [ -d $PREFIX/$APP/$TARGET ]; then
         for src in $PREFIX/$APP/$TARGET/*; do
             echo sudo ln -s $src /usr/local/$TARGET/${src##$PREFIX/$APP/$TARGET/}
@@ -34,6 +35,7 @@ fi
 if [ -e $PREFIX/$APP ]; then
     rm $PREFIX/$APP
 fi
+rm $PREFIX/$APP
 ln -s $PREFIX/$APP-$VERSION $PREFIX/$APP
 
 if [ -e $PKGNAME/activate.sh ];then
@@ -45,5 +47,5 @@ else
 fi
 
 if [ -d $PREFIX/$APP/lib/ ]; then
-    /sbin/ldconfig
+    sudo /sbin/ldconfig
 fi

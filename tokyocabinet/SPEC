@@ -1,0 +1,5 @@
+export VERSION=1.4.42
+export APP=tokyocabinet
+export TARFILE=$APP-$VERSION.tar.gz
+export SRCURL=http://1978th.net/tokyocabinet/$TARFILE
+export TARDIR=$APP-$VERSION
