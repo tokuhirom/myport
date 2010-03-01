@@ -1,5 +1,0 @@
-export VERSION=0.9.9
-export APP=sphinx
-export TARFILE=$APP-$VERSION.tar.gz
-export SRCURL=http://www.sphinxsearch.com/downloads/$TARFILE
-export TARDIR=$APP-$VERSION

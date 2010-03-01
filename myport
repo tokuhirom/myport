@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use App::MyPort::CLI;
+
+App::MyPort::CLI->run;
+
+__END__
+
+=head1 NAME
+
+myport
+
+=head1 SYNOPSIS
+
+    % myport install C
+
