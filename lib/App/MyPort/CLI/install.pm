@@ -40,7 +40,7 @@ App::MyPort::CLI::install - install application
 
 =head1 SYNOPSIS
 
-    % myport install nginx
+    % myport install nginx [configureopts]
 
 =head1 DESCRIPTION
 
