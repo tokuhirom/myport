@@ -1,7 +1,11 @@
+sub readme_markdown_from { }
+
 use inc::Module::Install;
 name 'App-MyPort';
-all_from 'lib/App/MyPort.pm';
 
+license 'perl';
+
+all_from 'lib/App/MyPort.pm';
 requires 'App::Cmd';
 requires 'IO::Prompt';
 requires 'File::HomeDir';
@@ -10,6 +14,8 @@ requires 'Path::Class';
 requires 'Archive::Extract';
 requires 'autodie';
 requires 'parent';
+
+readme_markdown_from 'myport';
 
 tests 't/*.t t/*/*.t t/*/*/*.t t/*/*/*/*.t';
 test_requires 'Test::More';
