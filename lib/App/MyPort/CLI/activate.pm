@@ -2,10 +2,7 @@ package App::MyPort::CLI::activate;
 use strict;
 use warnings;
 use App::MyPort::CLI -command;
-use File::Spec::Functions qw/catdir/;
 use App::MyPort::Installer;
-
-our $VERSION;
 
 sub run {
     my ( $self, $opt, $args ) = @_;
@@ -16,3 +13,21 @@ sub run {
 }
 
 1;
+__END__
+
+=head1 NAME
+
+App::MyPort::CLI::activate - activate application
+
+=head1 SYNOPSIS
+
+    % myport activate nginx
+
+=head1 DESCRIPTION
+
+activate application
+
+=head1 AUTHORS
+
+Tokuhiro Matsuno
+

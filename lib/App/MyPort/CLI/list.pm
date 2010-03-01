@@ -5,17 +5,6 @@ use App::MyPort::CLI -command;
 use Path::Class;
 use File::Basename;
 
-sub opt_spec {
-    return (
-#       [ "blortex|X", "use the blortex algorithm" ],
-#       [ "recheck|r", "recheck all results" ],
-    );
-}
-
-sub validate_args {
-    my ( $self, $opt, $args ) = @_;
-}
-
 sub run {
     my ( $self, $opt, $args ) = @_;
 
@@ -27,3 +16,21 @@ sub run {
 }
 
 1;
+__END__
+
+=head1 NAME
+
+App::MyPort::CLI::list - list of myports
+
+=head1 SYNOPSIS
+
+    % myport list
+
+=head1 DESCRIPTION
+
+This command prints list of myports.
+
+=head1 AUTHORS
+
+Tokuhiro Matsuno
+

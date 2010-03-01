@@ -33,7 +33,20 @@ sub _install {
 1;
 __END__
 
+
+=head1 NAME
+
+App::MyPort::CLI::install - install application
+
 =head1 SYNOPSIS
 
     % myport install nginx
+
+=head1 DESCRIPTION
+
+install application
+
+=head1 AUTHORS
+
+Tokuhiro Matsuno
 
