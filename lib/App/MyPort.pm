@@ -10,8 +10,8 @@ use File::HomeDir;
 use File::Spec::Functions qw/catfile/;
 
 our $ROOTDIR = $ENV{MYPORT_ROOT} || '/usr/local/app/';
-our $GITREPO = '';
-our $LOCALDIR = $ENV{MYPORT_LOCAL} || '/usr/local/';
+our $GITREPO = $ENV{MYPORT_SPEC_GITREPO} || 'git://github.com/tokuhirom/myport-spec.git';
+our $LOCALDIR = $ENV{MYPORT_LOCALDIR} || '/usr/local/';
 
 # bootstrap code.
 unless (-d $ROOTDIR) {
