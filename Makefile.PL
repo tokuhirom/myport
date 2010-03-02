@@ -17,6 +17,8 @@ requires 'parent';
 
 readme_markdown_from 'myport';
 
+install_script 'myport';
+
 tests 't/*.t t/*/*.t t/*/*/*.t t/*/*/*/*.t';
 test_requires 'Test::More';
 test_requires 'YAML';

@@ -17,9 +17,13 @@ myport is my own ports like package management system.
 
 choose your root directory.default value is '/usr/local/app/'.
 
-- LOCALDIR
+- MYPORT_LOCALDIR
 
 choose your local directory.default value is '/usr/local/'.
+
+- MYPORT_SPEC_GITREPO
+
+myport spec repository.
 
 # AUTHOR
 
