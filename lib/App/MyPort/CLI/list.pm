@@ -11,6 +11,7 @@ sub run {
     for my $d (dir(App::MyPort->get_spec_dir())->children) {
         my $basename = basename($d);
         next if $basename =~ /^\./;
+        next unless -d $d;
         print "$basename\n";
     }
 }
