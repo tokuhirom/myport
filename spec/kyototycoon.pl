@@ -1,1 +1,1 @@
-url 'http://fallabs.com/kyototycoon/pkg/kyototycoon-0.9.19.tar.gz';
+url 'http://fallabs.com/kyototycoon/pkg/kyototycoon-0.9.27.tar.gz';
