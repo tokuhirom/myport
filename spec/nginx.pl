@@ -1,4 +1,4 @@
-url 'http://nginx.org/download/nginx-0.8.48.tar.gz';
+url 'http://nginx.org/download/nginx-0.8.54.tar.gz';
 
 sub install {
     if (-f "/etc/debian_version") {
